@@ -8,7 +8,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Welcome - UmbracoTV</title>
+		<title>Welcome - Het is je boy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -46,8 +46,8 @@
 		<!-- Jumbotron, w title -->
 		<div class="jumbotron text-center jumbotron-fluid">
 			<div class="container">
-				<h1 class="display-1">Welcome - UmbracoTV</h1>
-				<p>And this is <span class="font-weight-bold">only</span> the beginning.</p>
+				<h1 class="display-1">@Model.Value("title", fallback: Fallback.ToAncestors)</h1>
+				<p>@Model.Value("subtitle")</p>
 			</div>
 		</div>
 
